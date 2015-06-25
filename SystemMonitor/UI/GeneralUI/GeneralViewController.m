@@ -11,12 +11,14 @@
 
 #import "AppDelegate.h"
 #import "GeneralViewController.h"
+#import "AMCommonUI.h"
 
 @interface GeneralViewController ()
 @property (nonatomic, weak) IBOutlet UILabel *deviceLabel;
 @property (nonatomic, weak) IBOutlet UILabel *hostnameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *screenRezolutionLabel;
 @property (nonatomic, weak) IBOutlet UILabel *retinaLabel;
+@property (nonatomic, weak) IBOutlet UILabel *retinaHdLabel;
 @property (nonatomic, weak) IBOutlet UILabel *screenSizeLabel;
 @property (nonatomic, weak) IBOutlet UILabel *ppiLabel;
 @property (nonatomic, weak) IBOutlet UILabel *aspectRatioLabel;
@@ -57,7 +59,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ViewBackground-1496"]]];
+    [self.tableView setBackgroundView:[AMCommonUI sectionBackgroundView]];
     
     AppDelegate *app = [AppDelegate sharedDelegate];
     NSString *deviceName = [NSString stringWithFormat:@"Apple %@", app.iDevice.deviceInfo.deviceName];
@@ -66,6 +68,7 @@
     [self.screenRezolutionLabel setText:app.iDevice.deviceInfo.screenResolution];
     [self.screenSizeLabel setText:[NSString stringWithFormat:@"%0.1f\"", app.iDevice.deviceInfo.screenSize]];
     [self.retinaLabel setText:(app.iDevice.deviceInfo.retina ? @"Yes" : @"No")];
+    [self.retinaHdLabel setText:(app.iDevice.deviceInfo.retinaHD ? @"Yes" : @"No")];
     [self.ppiLabel setText:[NSString stringWithFormat:@"%ld ppi", (long)app.iDevice.deviceInfo.ppi]];
     [self.aspectRatioLabel setText:app.iDevice.deviceInfo.aspectRatio];
     [self.osNameLabel setText:app.iDevice.deviceInfo.osName];

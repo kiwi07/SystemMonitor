@@ -25,7 +25,7 @@
 - (id)init{
     self = [super init];
     if (self) {
-        self.frame = CGRectMake(0.0, 40.0, 320.0, 216.0);
+        self.frame = CGRectMake(0.0, 40.0, [UIScreen mainScreen].bounds.size.width, 216.0);
         self.showsSelectionIndicator = YES;
         
         self.delegate = self;
@@ -64,7 +64,7 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.currentFilter = row;
+    self.currentFilter = (SortFilter_t)row;
     [self.sortDelegate processSortFilterChanged:self.currentFilter];
 }
 

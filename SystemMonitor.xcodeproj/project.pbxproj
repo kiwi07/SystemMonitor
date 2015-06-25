@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0300A5BC19D88F1300D5F7E1 /* AMCommonUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0300A5BB19D88F1300D5F7E1 /* AMCommonUI.m */; };
 		033D9651182EC6B6009477E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033D9650182EC6B6009477E7 /* Images.xcassets */; };
 		03724CD6182D7E3700221FE8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03724CD5182D7E3700221FE8 /* XCTest.framework */; };
 		03724CD7182D7E3700221FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703D22DD173818EC0001E3B3 /* Foundation.framework */; };
 		03724CD8182D7E3700221FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703D22DB173818EC0001E3B3 /* UIKit.framework */; };
 		03724CDE182D7E3700221FE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03724CDC182D7E3700221FE8 /* InfoPlist.strings */; };
 		03724CE8182D7EA200221FE8 /* AMUtils_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03724CE7182D7EA200221FE8 /* AMUtils_Tests.m */; };
+		03B6316919D8967100DA9785 /* TubeTexture@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03B6316819D8967100DA9785 /* TubeTexture@3x.png */; };
 		03DA2AB9183930700014C322 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F9B39B18392D7500804E1D /* HockeySDK.framework */; };
 		03DA2ABA183930C80014C322 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03F9B39E18392D7500804E1D /* HockeySDKResources.bundle */; };
-		03DA2ABB183930CA0014C322 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 03F9B39D18392D7500804E1D /* HockeySDK.xcconfig */; };
 		03DA2ABD183930EA0014C322 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DA2ABC183930EA0014C322 /* CoreText.framework */; };
 		03DA2ABE183930F90014C322 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7030C0B41764EDA30072DC8D /* QuartzCore.framework */; };
 		03DA2AC01839310A0014C322 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DA2ABF1839310A0014C322 /* Security.framework */; };
@@ -114,6 +115,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0300A5BA19D88F1300D5F7E1 /* AMCommonUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCommonUI.h; sourceTree = "<group>"; };
+		0300A5BB19D88F1300D5F7E1 /* AMCommonUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCommonUI.m; sourceTree = "<group>"; };
 		033D9650182EC6B6009477E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03724CD4182D7E3700221FE8 /* SystemMonitor Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SystemMonitor Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03724CD5182D7E3700221FE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -121,6 +124,7 @@
 		03724CDD182D7E3700221FE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03724CE1182D7E3700221FE8 /* SystemMonitor Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SystemMonitor Tests-Prefix.pch"; sourceTree = "<group>"; };
 		03724CE7182D7EA200221FE8 /* AMUtils_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMUtils_Tests.m; sourceTree = "<group>"; };
+		03B6316819D8967100DA9785 /* TubeTexture@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TubeTexture@3x.png"; sourceTree = "<group>"; };
 		03DA2ABC183930EA0014C322 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		03DA2ABF1839310A0014C322 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		03DF1A13183A11E700F7AF12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -499,27 +503,29 @@
 				03DF1A61183A11FD00F7AF12 /* BatteryUI */,
 				03DF1A64183A11FD00F7AF12 /* ConnectionUI */,
 				03DF1A6E183A11FD00F7AF12 /* CpuUI */,
-				03DF1A71183A11FD00F7AF12 /* DefaultCell.h */,
-				03DF1A72183A11FD00F7AF12 /* DefaultCell.m */,
 				03DF1A73183A11FD00F7AF12 /* DeviceSpecificUI */,
 				03DF1A76183A11FD00F7AF12 /* GeneralUI */,
 				03DF1A79183A11FD00F7AF12 /* GpuUI */,
+				03DF1A82183A11FD00F7AF12 /* NetworkUI */,
+				03DF1A85183A11FD00F7AF12 /* ProcessUI */,
+				03DF1A93183A11FD00F7AF12 /* RamUI */,
+				03DF1A9C183A11FD00F7AF12 /* StorageUI */,
+				03DF1A71183A11FD00F7AF12 /* DefaultCell.h */,
+				03DF1A72183A11FD00F7AF12 /* DefaultCell.m */,
 				03DF1A7C183A11FD00F7AF12 /* iPadRootTableViewController.h */,
 				03DF1A7D183A11FD00F7AF12 /* iPadRootTableViewController.m */,
 				03DF1A7E183A11FD00F7AF12 /* iPhoneRootTableViewController.h */,
 				03DF1A7F183A11FD00F7AF12 /* iPhoneRootTableViewController.m */,
 				03DF1A80183A11FD00F7AF12 /* MainStoryboard_iPad.storyboard */,
 				03DF1A81183A11FD00F7AF12 /* MainStoryboard_iPhone.storyboard */,
-				03DF1A82183A11FD00F7AF12 /* NetworkUI */,
-				03DF1A85183A11FD00F7AF12 /* ProcessUI */,
-				03DF1A93183A11FD00F7AF12 /* RamUI */,
 				03DF1A96183A11FD00F7AF12 /* RootCell.h */,
 				03DF1A97183A11FD00F7AF12 /* RootCell.m */,
 				03DF1A98183A11FD00F7AF12 /* RootTableViewController.h */,
 				03DF1A99183A11FD00F7AF12 /* RootTableViewController.m */,
 				03DF1A9A183A11FD00F7AF12 /* SMSplitViewController.h */,
 				03DF1A9B183A11FD00F7AF12 /* SMSplitViewController.m */,
-				03DF1A9C183A11FD00F7AF12 /* StorageUI */,
+				0300A5BA19D88F1300D5F7E1 /* AMCommonUI.h */,
+				0300A5BB19D88F1300D5F7E1 /* AMCommonUI.m */,
 			);
 			name = UI;
 			path = SystemMonitor/UI;
@@ -642,6 +648,7 @@
 				03E332FD183FEE4C00480CE7 /* BubbleTexture@2x.png */,
 				03E332FE183FEE4C00480CE7 /* TubeTexture.png */,
 				03E332FF183FEE4C00480CE7 /* TubeTexture@2x.png */,
+				03B6316819D8967100DA9785 /* TubeTexture@3x.png */,
 			);
 			path = "GL Assets";
 			sourceTree = "<group>";
@@ -792,7 +799,7 @@
 		703D22D0173818EB0001E3B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = st;
 				TargetAttributes = {
 					03724CD3182D7E3700221FE8 = {
@@ -835,8 +842,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03DF1AD3183A11FD00F7AF12 /* MainStoryboard_iPad.storyboard in Resources */,
+				03B6316919D8967100DA9785 /* TubeTexture@3x.png in Resources */,
 				03DF1AC9183A11FD00F7AF12 /* ConnectionSectionView.xib in Resources */,
-				03DA2ABB183930CA0014C322 /* HockeySDK.xcconfig in Resources */,
 				03E33300183FEE4C00480CE7 /* ArrowDownIcon.png in Resources */,
 				03E33303183FEE4C00480CE7 /* BubbleTexture@2x.png in Resources */,
 				03DA2ABA183930C80014C322 /* HockeySDKResources.bundle in Resources */,
@@ -874,6 +881,7 @@
 				03DF1ACF183A11FD00F7AF12 /* GeneralViewController.m in Sources */,
 				03DF1ADF183A11FD00F7AF12 /* RootTableViewController.m in Sources */,
 				03DF1AE1183A11FD00F7AF12 /* StorageViewController.m in Sources */,
+				0300A5BC19D88F1300D5F7E1 /* AMCommonUI.m in Sources */,
 				03DF1AC6183A11FD00F7AF12 /* BatteryViewController.m in Sources */,
 				03DF1AC3183A11FD00F7AF12 /* RAMUsage.m in Sources */,
 				03DF1ABD183A11FD00F7AF12 /* NetworkInfo.m in Sources */,
@@ -961,7 +969,6 @@
 		03724CE5182D7E3700221FE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SystemMonitor.app/SystemMonitor";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
@@ -988,6 +995,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9ef375f-6381-4a77-8a21-b3bff8518385";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -996,7 +1004,6 @@
 		03724CE6182D7E3700221FE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SystemMonitor.app/SystemMonitor";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
@@ -1019,6 +1026,7 @@
 				INFOPLIST_FILE = "SystemMonitor Tests/SystemMonitor Tests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9ef375f-6381-4a77-8a21-b3bff8518385";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -1028,7 +1036,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1058,7 +1065,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "8907C3F4-0417-431C-B378-39106661BF23";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1069,7 +1075,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1092,7 +1097,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "8907C3F4-0417-431C-B378-39106661BF23";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1129,12 +1133,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/3rdParty/Lumberjack",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "C6324EDC-1B35-4C54-AF64-FA30A6ED3347";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C6324EDC-1B35-4C54-AF64-FA30A6ED3347";
+				PROVISIONING_PROFILE = "d3961d8e-1e66-4df4-aeeb-4c5bdce6f5e7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d3961d8e-1e66-4df4-aeeb-4c5bdce6f5e7";
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1168,11 +1173,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/3rdParty/Lumberjack",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = SystemMonitor;
-				PROVISIONING_PROFILE = "C6324EDC-1B35-4C54-AF64-FA30A6ED3347";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C6324EDC-1B35-4C54-AF64-FA30A6ED3347";
+				PROVISIONING_PROFILE = "d3961d8e-1e66-4df4-aeeb-4c5bdce6f5e7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "d3961d8e-1e66-4df4-aeeb-4c5bdce6f5e7";
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv7 armv7s";
+				VALID_ARCHS = "armv7 armv7s arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
